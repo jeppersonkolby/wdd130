@@ -23,13 +23,35 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="contact-page">
+        <section class="company-info">
             <h1>Contact Canyon Rafting</h1>
-            <p>123w 456S, Provo, UT 84601</p>
+            <p>123W 456S, Provo, UT 84601</p>
             <p>123-456-7890</p>
             <p>Canyon.rafting@gmail.com</p>
+        </section>
+        <section class="contact-map">
             <iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.47274501248!2d-111.72130935601359!3d40.257369837120564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C%20UT!5e0!3m2!1sen!2sus!4v1795554622025!5m2!1sen!2sus"></iframe>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label>General Inquiry
+                    <input type="radio" id="general" name="purpose" value="general"></label>
+                <label>Reservation Question
+                    <input type="radio" id="reservation" name="purpose" value="reservation"></label>
+                <label>Website Suggestion
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion"></label>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" rows="5" cols="40"></textarea>
+                <label>Please subscribe me to the monthly newsletter
+                    <input type="checkbox" name="newsletter" id="newsletter"></label>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
         <section class="team">
             <h2>Meet Our Team</h2>
@@ -43,26 +65,7 @@
                 <figcaption>Bill - Rafting Guide</figcaption>
             </figure>
         </section>
-        <section class="contact-form">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-                <input type="radio" id="general" name="purpose" value="general">
-                <label for="general">General Inquiry</label>
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label>
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                <label for="suggestion">Website Suggestion</label>
-                <label for="message">Your Message</label>
-                <textarea name="message" id="message" rows="5" cols="40"></textarea>
-                <label for="newsletter">Please subscribe to our monthly newsletter</label>
-                <input type="checkbox" name="newsletter" id="newsletter">
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+
     </main>
     <footer>
         <p>©️, 2026, Canyon Rafting, Kolby Jepperson.</p>
